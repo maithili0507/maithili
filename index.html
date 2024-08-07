@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="css/leaflet-measure.css">
         <style>
         #map {
-            width: 664px;
+            width: 1136px;
             height: 588px;
         }
         </style>
@@ -60,7 +60,7 @@
         }
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[19.411680510007137,72.79830783901534],[19.41603661161676,72.80352556366954]]);
+        }).fitBounds([[19.411680510007137,72.79644774382142],[19.416036611616846,72.80538565886333]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -752,10 +752,10 @@
         lay.addTo(map);
         setBounds();
         map.addControl(new L.Control.Search({
-            layer: layer_02_Nalasoparaprecient_1,
+            layer: layer_Wells_3,
             initial: false,
             hideMarkerOnCollapse: true,
-            propertyName: 'herit_clas'}));
+            propertyName: 'id'}));
         document.getElementsByClassName('search-button')[0].className +=
          ' fa fa-binoculars';
         </script>
